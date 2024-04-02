@@ -1,0 +1,38 @@
+<div>
+  <div class="py-5 px-2">
+    <h1>Get a Job!</h1>
+  </div>
+
+  <form id="job-form" onsubmit="app.JobsController.createJob()" class="row bg-white p-3 rounded my-2 d-none">
+    <div class="col-12">
+      <h3>Find or Post a job!!</h3>
+    </div>
+    <div class="mb-3 col-3">
+      <label for="job-Company">Company</label>
+      <input type="text" id="company" name="company" minlength="2" maxlength="20" required class="form-control">
+    </div>
+    <div class="mb-3 col-3">
+      <label for="job-title">Title</label>
+      <input type="text" id="jobTitle" name="jobTitle" minlength="2" maxlength="20" required class="form-control">
+    </div>
+    <div class="mb-3 col-3">
+      <label for="job-hours">Hours</label>
+      <input type="number" id="hours" name="hours" min="10" max="50" required class="form-control">
+    </div>
+    <div class="mb-3 col-3">
+      <label for="job-rate">Rate of pay</label>
+      <input type="number" id="rate" name="rate" min="5" required class="form-control">
+    </div>
+    <div class="mb-3 col-12">
+      <label for="job-description">Description</label>
+      <textarea name="description" class="form-control" id="description" rows="5"></textarea>
+    </div>
+    <div class="d-flex justify-content-end">
+      <button class="btn btn-primary">Create Job <i class="mdi mdi-plus-box"></i></button>
+    </div>
+  </form>
+
+  <section id="job-listings" class="row">
+    <!-- //SECTION - This is where the House Cards will be -->
+  </section>
+</div>

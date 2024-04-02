@@ -1,8 +1,6 @@
 import { AppState } from "../AppState.js"
 
 
-
-
 export class Job {
   constructor(data) {
     this.id = data.id
@@ -22,10 +20,10 @@ export class Job {
     <div class="col-12 col-md-6">
       <div class="card">
         <div class="card-body">
-          <h3 class="card-title">${this.company} | ${this.jobTitle} ${this.hours}</h3>
-          <p class="card-text">${this.description}</p>
+          <h3 class="card-title">${this.company} | ${this.jobTitle}</h3>
+          <p class="card-text">Job description ~ ${this.description} | Hours: ${this.hours}</p>
           <div class="d-flex justify-content-between align-items-center">
-            <p class="fw-bold fs-4">Price: $${this.rate}</p>
+            <p class="fw-bold fs-4">Rate of pay: $${this.rate}</p>
             <div>
               <span class="text-secondary me-2">${this.creator.name}</span>
               <img class="profile-picture profile-picture-sm"
