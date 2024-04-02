@@ -8,10 +8,25 @@ class HousesService {
 
   async getHouses() {
     const response = await api.get('api/houses')
-    console.log('House', response);
+    // console.log('House', response);
     const houses = response.data.map(house => new House(house))
     AppState.houses = houses
   }
+
+  async createHouse(houseData) {
+    const response = await api.post('api/houses', houseData)
+    console.log('Houses axios', response);
+    const house = new House(response.data)
+    AppState.houses.push(house)
+  }
+
+  async deleteHouse(houseId) {
+    const response = await api.delete(`api/houses/${houseId}`)
+    console.log('house', response);
+    const indexToRemove = AppState.houses.findIndex(house => house.id == houseId)
+    AppState.houses.splice(indexToRemove, 1)
+  }
+
 }
 
 
