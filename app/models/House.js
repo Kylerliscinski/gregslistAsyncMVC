@@ -21,8 +21,8 @@ export class House {
 
   get HouseCard() {
     return `
-    <div class="col-12 col-md-6">
-      <div class="card">
+    <div class="col-12 col-md-6 g-3">
+      <div class="card bg-success shadow">
         <img class="card-img-top"
           src="${this.imgUrl}"
           alt="Image of a ${this.year}, house">

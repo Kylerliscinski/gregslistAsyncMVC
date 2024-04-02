@@ -9,3 +9,10 @@
 .profile-picture.profile-picture-sm {
   height: 64px;
 }
+
+body {
+  font-family: "Orbitron", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}

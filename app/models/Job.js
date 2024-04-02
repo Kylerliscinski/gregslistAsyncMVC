@@ -17,8 +17,8 @@ export class Job {
 
   get JobCard() {
     return `
-    <div class="col-12 col-md-6">
-      <div class="card">
+    <div class="col-12 col-md-6 g-3">
+      <div class="card bg-success">
         <div class="card-body">
           <h3 class="card-title">${this.company} | ${this.jobTitle}</h3>
           <p class="card-text">Job description ~ ${this.description} | Hours: ${this.hours}</p>
