@@ -25,6 +25,11 @@ class JobsService {
     AppState.jobs.splice(indexToRemove, 1)
   }
 
+  // async editJob(jobId) {
+  //   const response = await api.edit(`api/jobs/${jobId}`)
+  //   console.log('job', response);
+  // }
+
 }
 
 

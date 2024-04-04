@@ -45,4 +45,13 @@ export class Job {
     }
     return ''
   }
+
+  // get EditButton() {
+  //   if (this.creatorId == AppState.account?.id) {
+  //     return `
+  //     <button onclick="app.JobsController.editJob('${this.id}')" class="btn btn-warning" title="edit this car"><i class="mdi mdi-pencil-circle-outline"></i></button>
+  //     `
+  //   }
+  //   return ''
+  // }
 }
